@@ -70,11 +70,11 @@ d = _(
     age = 31, 
     sex = "male")
 d.func = lambda x, y : x + y
-print(31 in d)
+print(31 in d) # True
 for k, v in d:
-    print(k, v)
-print(d.func(10, 90))
-print(d["func"](10, 80))
+    print(k, v) # name Victor
+print(d.func(10, 90)) # 100
+print(d["func"](10, 80)) #90
 
 
 
