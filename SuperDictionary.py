@@ -1,7 +1,10 @@
 class _:
-    __dic = {}
+    @classmethod
+    def __set_dic(cls):
+        cls.__dic = {}
 
-    def __init__(self, **dic):        
+    def __init__(self, **dic): 
+        self.__set_dic()       
         for key, value in dic.items():
             self.__dic[key] = value
     def __str__(self):
