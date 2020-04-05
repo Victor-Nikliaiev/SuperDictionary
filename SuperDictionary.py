@@ -65,17 +65,14 @@ class _:
             self.__i += 1           
             return (key, value)
 
-d = _(
-    name = "Victor",
-    age = 31, 
-    sex = "male")
-d.func = lambda x, y : x + y
-print(31 in d) # True
-for k, v in d:
-    print(k, v) # name Victor
-print(d.func(10, 90)) # 100
-print(d["func"](10, 80)) #90
-
-
-
- 
+if __name__ == "__main__":
+    d = _(
+        name = "Victor",
+        age = 31, 
+        sex = "male")
+    d.func = lambda x, y : x + y
+    print(31 in d) # True
+    for k, v in d:
+        print(k, v) # name Victor 
+    print(d.func(10, 90)) # 100
+    print(d["func"](10, 80)) #90
